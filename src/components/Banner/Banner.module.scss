@@ -1,0 +1,47 @@
+.banner {
+  width: 251px;
+  height: 350px;
+
+  position: absolute;
+  right: 0;
+  bottom: 80px;
+  text-align: center;
+
+  background-color: #86d3f4;
+  z-index: 10000;
+
+  animation: moveBlock 0.5s ease;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  h3 {
+    text-align: center;
+    margin: 10px 20px;
+  }
+
+  p {
+    margin: 10px 20px;
+  }
+}
+
+.button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  padding: 17px 67px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+@keyframes moveBlock {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}

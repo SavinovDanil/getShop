@@ -1,0 +1,23 @@
+.content {
+  padding: 50px 72px;
+  width: 380px;
+  text-align: center;
+  background-color: #86d3f4;
+  .buttonsBlock {
+    display: flex;
+    flex-wrap: wrap;
+    width: 284px;
+    margin: 0 auto;
+  }
+}
+.closeButton {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #ffffff;
+  border: none;
+  width: 80px;
+  height: 80px;
+}
