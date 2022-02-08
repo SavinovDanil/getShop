@@ -1,23 +1,110 @@
+.homePage {
+  height: 100%;
+  background-image: url('../../public/images/background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .content {
+  height: 100%;
   padding: 50px 72px;
   width: 380px;
-  text-align: center;
   background-color: #86d3f4;
+
   .buttonsBlock {
     display: flex;
     flex-wrap: wrap;
     width: 284px;
     margin: 0 auto;
   }
+
+  .confirm {
+    .buttonDisabled {
+      font-family: 'Roboto';
+      display: block;
+      width: 284px;
+      padding: 20px 50px;
+      margin: 0 auto;
+
+      background-color: transparent;
+      border: 1px solid #4e4e4e;
+      cursor: pointer;
+    }
+
+    .buttonConfirm {
+      font-family: 'Roboto';
+      display: block;
+      width: 284px;
+      padding: 20px 50px;
+      margin: 0 auto;
+
+      background-color: #000000;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+    }
+  }
 }
 .closeButton {
+  padding: 0;
+  margin: 0;
   cursor: pointer;
   display: block;
   position: absolute;
-  right: 0;
-  top: 0;
-  background-color: #ffffff;
+  right: 20px;
+  top: 20px;
+  background-color: transparent;
   border: none;
-  width: 80px;
-  height: 80px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  // width: 80px;
+  // height: 80px;
+}
+
+.check {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  justify-content: space-between;
+  p {
+    margin-left: 20px;
+  }
+}
+
+.info {
+  height: 100%;
+  width: 380px;
+  padding: 265px 48px;
+  background-color: #86d3f4;
+  text-align: center;
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+.qrCode {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  display: flex;
+  color: #ffffff;
+  width: 300px;
+  align-items: right;
+  p {
+    text-align: right;
+  }
+  img {
+    margin-left: 10px;
+  }
 }
