@@ -43,7 +43,9 @@ export const Home = () => {
       {isInfo ? (
         <div className={styles.info}>
           <h2>
-            ЗАЯВКА<br></br>ПРИНЯТА
+            ЗАЯВКА
+            <br />
+            ПРИНЯТА
           </h2>
           <p>Держите телефон под рукой.</p>
           <p>Скоро с Вами свяжется наш менеджер.</p>
@@ -76,8 +78,6 @@ export const Home = () => {
           ) : (
             <DisabledButton isChecked={isChecked} valueLength={valueInput.length} />
           )}
-          {/* <ConfirmButton isChecked={isChecked} valueLength={valueInput.length} /> */}
-          {/* <DisabledButton isChecked={isChecked} valueLength={valueInput.length} /> */}
         </div>
       )}
     </div>
